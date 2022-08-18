@@ -51,7 +51,11 @@ ul {
 
 /* header*/
 
-.header {
+.header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
   background-color: var(--body-background-color);
 
   outline: 2px dashed blue;
@@ -91,20 +95,19 @@ ul {
 
 /* site navigation */
 
-.header-nav {
+.main-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  margin-left: 93px;
 
   outline: 2px solid blue;
 }
 
-.header-nav .current,
-.header-nav .item:not(:last-child) {
-  margin-right: 50px;
+.main-nav .item + .item {
+  margin-left: 50px;
 }
 
-.header-nav a {
+.main-nav a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -117,21 +120,22 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.header-nav .current a {
+.main-nav .current a {
   color: var(--blue-color);
 }
 
 /* header-contact */
-.header-contact {
+
+.contact-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  margin-left: auto;
 
   list-style: none;
 
   outline: 2px solid blue;
 }
-.header-contact a {
+.contact-nav a {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -144,18 +148,22 @@ ul {
   letter-spacing: 0.02em;
 }
 
-.header-contact .item {
+.contact-nav .item {
+}
+
+.contact-nav .item + .item {
+  margin-left: 50px;
 }
 
 /* hover and focus */
 
-.header-nav a:hover,
-.header-contact .item a:hover {
+.main-nav a:hover,
+.contact-nav .item a:hover {
   color: var(--blue-color);
 }
 
-.header-nav .item a:focus,
-.header-contact .item a:focus {
+.main-nav .item a:focus,
+.contact-nav .item a:focus {
   color: var(--blue-color);
 }
 
