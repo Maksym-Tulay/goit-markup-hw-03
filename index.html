@@ -30,9 +30,10 @@
   </head>
 
   <body>
-    <div class="container">
-      <!--Header-->
-      <header class="header">
+    <!--Header-->
+
+    <header class="page-header">
+      <div class="container page-header-container">
         <!--Main navigation-->
         <nav class="header-nav">
           <a href="./index.html" class="logo-header"> <span class="logo-span">Web</span>Studio </a>
@@ -42,33 +43,36 @@
             <li class="item"><a href="./portfolio.html">Портфоліо</a></li>
             <li class="item"><a href="#">Контакти</a></li>
           </ul>
-
-          <!--Contacts-->
-          <ul class="contact-nav">
-            <li class="item">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
         </nav>
-      </header>
 
-      <main>
-        <!--Шапка-->
-        <!-- hero-section -->
+        <!--Contacts-->
+        <ul class="contact-nav">
+          <li class="item">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
+    </header>
 
-        <section class="index-hero">
+    <main>
+      <!--Шапка-->
+      <!-- hero-section -->
+      <section class="index-hero">
+        <div class="container">
           <h1 class="index-hero-title">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
           <button type="button" class="index-hero-button">Замовити послугу</button>
-        </section>
+        </div>
+      </section>
 
-        <!--Особливості-->
-        <!-- specialities section -->
+      <!--Особливості-->
+      <!-- specialities section -->
 
-        <section class="index-aside">
+      <section class="index-aside">
+        <div class="container">
           <!-- h2 must be hidden by css -->
           <h2 class="hidden-title">Особливості</h2>
 
@@ -90,12 +94,14 @@
               <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <!--Чим ми займаємося-->
-        <!-- worklist section -->
+      <!--Чим ми займаємося-->
+      <!-- worklist section -->
 
-        <section class="index-work-section">
+      <section class="index-work-section">
+        <div class="container">
           <h2 class="work-list-title">Чим ми займаємося</h2>
           <ul class="index-work-list">
             <li>
@@ -114,12 +120,14 @@
               </a>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
 
-        <!--Наша команда-->
-        <!-- teamlist section -->
+      <!--Наша команда-->
+      <!-- teamlist section -->
 
-        <section class="index-teamlist">
+      <section class="index-teamlist">
+        <div class="container">
           <h2 class="index-teamlist-title">Наша команда</h2>
           <ul>
             <li>
@@ -143,11 +151,13 @@
               <p>UI Designer</p>
             </li>
           </ul>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <!--Footer-->
-      <footer class="footer">
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
         <p class="logo-footer"><span class="logo-span">Web</span>Studio</p>
         <!--Adress-->
         <address class="address-list">
@@ -169,7 +179,7 @@
             </li>
           </ul>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>

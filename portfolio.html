@@ -30,32 +30,35 @@
   </head>
 
   <body>
-    <div class="container">
-      <!--Header-->
-      <header class="header">
+    <!--Header-->
+
+    <header class="page-header">
+      <div class="container page-header-container">
         <!--Main navigation-->
         <nav class="header-nav">
           <a href="./index.html" class="logo-header"> <span class="logo-span">Web</span>Studio </a>
 
           <ul class="main-nav">
-            <li class="item current"><a href="./index.html">Студія</a></li>
-            <li class="item"><a href="./portfolio.html">Портфоліо</a></li>
+            <li class="item"><a href="./index.html">Студія</a></li>
+            <li class="item current"><a href="./portfolio.html">Портфоліо</a></li>
             <li class="item"><a href="#">Контакти</a></li>
           </ul>
-
-          <!--Contacts-->
-          <ul class="contact-nav">
-            <li class="item">
-              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-          </ul>
         </nav>
-      </header>
 
-      <main class="main">
-        <!--Portfolio gallery-->
-        <section class="portfolio-section">
+        <!--Contacts-->
+        <ul class="contact-nav">
+          <li class="item">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="main">
+      <!--Portfolio gallery-->
+      <section class="portfolio-section">
+        <div class="container">
           <!-- h2 must be hidden by css -->
           <h1 class="hidden-title">Портфоліо</h1>
 
@@ -77,8 +80,10 @@
               <button type="button">Маркетинг</button>
             </li>
           </ul>
+        </div>
 
-          <!--Gallery-->
+        <!--Gallery-->
+        <div class="container">
           <ul class="gallery">
             <li class="gallery-item">
               <a href="">
@@ -197,11 +202,13 @@
               </a>
             </li>
           </ul>
-        </section>
-      </main>
+        </div>
+      </section>
+    </main>
 
-      <!--Footer-->
-      <footer class="footer">
+    <!--Footer-->
+    <footer class="footer">
+      <div class="container">
         <p class="logo-footer"><span class="logo-span">Web</span>Studio</p>
         <!--Adress-->
         <address class="address-list">
@@ -223,7 +230,7 @@
             </li>
           </ul>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
