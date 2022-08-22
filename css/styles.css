@@ -57,6 +57,10 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* header*/
 
 .page-header {
@@ -87,7 +91,6 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: var(--logo-text-color);
-  text-decoration: none;
   letter-spacing: 0.03em;
 
   /* outline: 2px solid blue; */
@@ -99,7 +102,6 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: var(--blue-color);
-  text-decoration: none;
   letter-spacing: 0.03em;
 }
 
@@ -134,7 +136,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   color: inherit;
-  text-decoration: none;
   letter-spacing: 0.02em;
 }
 
@@ -161,11 +162,10 @@ img {
   font-size: 14px;
   line-height: 1.14;
   color: rgba(117, 117, 117, 100%);
-  text-decoration: none;
   letter-spacing: 0.02em;
 }
 
-.contact-nav .item {
+.contact-nav-item {
 }
 
 /* hover and focus */
@@ -407,15 +407,14 @@ img {
   justify-content: center;
   align-items: center;
 
-  margin-bottom: 34px;
-  padding-bottom: 16px;
+  margin-bottom: 50px;
 
   list-style: none;
 
   /* outline: 2px dashed peru; */
 }
 
-.gallery-nav-item {
+.gallery-nav-item:nth-child(n + 2) {
   margin-left: 8px;
 }
 
@@ -452,18 +451,6 @@ img {
   /* outline: 2px dashed seagreen; */
 }
 
-.gallery a {
-  text-decoration: none;
-}
-
-.gallery a:focus {
-  color: var(--blue-color);
-}
-
-.gallery a:hover {
-  color: var(--blue-color);
-}
-
 .gallery-item {
   width: 370px;
 
@@ -478,17 +465,30 @@ img {
   margin-right: 0;
 }
 
+.gallery-item-box {
+}
+
+.gallery-item-box:focus {
+  color: var(--blue-color);
+}
+
+.gallery-item-box:hover {
+  color: var(--blue-color);
+}
+
 .descr-container {
   margin-top: 0px;
   padding: 20px 24px;
 
   border: 1px solid;
+  border-top: 0px;
   border-color: var(--portfolio-item-border-color);
 
   background-color: var(--body-background-color);
 }
 
-.gallery-item h3 {
+.gallery-item-header {
+  margin-bottom: 0px;
   color: var(--body-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -496,7 +496,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.gallery-item p {
+.gallery-item-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;
@@ -517,9 +517,9 @@ img {
 /* logo */
 
 .logo-footer {
+  display: block;
   margin-top: 0;
   margin-bottom: 20px;
-  text-decoration: none;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -537,7 +537,6 @@ img {
   font-size: 26px;
   line-height: 1.19;
   color: var(--blue-color);
-  text-decoration: none;
   letter-spacing: 0.03em;
 }
 
@@ -545,7 +544,6 @@ img {
 
 .address-list {
   list-style: none;
-
   /* outline: 2px solid peru; */
 }
 
@@ -564,22 +562,20 @@ img {
   color: var(--blue-color);
 }
 
-.address-item-main a {
+.item-main a {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.5;
   color: var(--body-background-color);
-  text-decoration: none;
   letter-spacing: 0.03em;
 }
 
-.address-item-link a {
+.item-link a {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--address-text-color);
-  text-decoration: none;
   letter-spacing: 0.03em;
 }
