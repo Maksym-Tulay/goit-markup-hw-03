@@ -196,7 +196,7 @@ a {
 
 .index-hero-title {
   width: 696px;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 30px auto;
 
   color: var(--body-background-color);
   font-weight: 900;
@@ -488,7 +488,7 @@ a {
 }
 
 .gallery-item-header {
-  margin-bottom: 0px;
+  margin-bottom: 4px;
   color: var(--body-text-color);
   font-weight: 700;
   font-size: 18px;
